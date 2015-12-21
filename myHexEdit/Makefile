@@ -18,9 +18,9 @@ $(OUTPUT): $(addsuffix .o, $(OBJ))
 	$(CC) -c -o $@ $< $(CFLAGS)
 	
 clean:
-	rm *.o
-	rm ../*.o
+	rm -f *.o
+	rm -f ../*.o
 	rm -r ../out/
 
 cleanobj:
-	rm *.o
+	rm -f *.o
